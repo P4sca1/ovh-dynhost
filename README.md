@@ -50,7 +50,7 @@ If your ip changed and you can't wait 15 minutes for the next update to happen, 
 `docker-compose exec ovh-dynhost ./dynhost.sh`
 
 ### Checking for problems
-The docker container will echo debug messages every 15 miuntes.
+The docker container will echo debug messages whenever it tries to update the dynhost.
 You can access them via
 
 `docker container exec ovh-dynhost cat /usr/src/app/dynhost.log`
