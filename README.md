@@ -18,7 +18,7 @@ docker run \
   -e DYNHOST_PASSWORD=password \
   --restart always \
   --name ovh-dynhost \
-  P4sca1/ovh-dynhost
+  p4sca1/ovh-dynhost
 ```
 
 **Or via docker-compose:**
@@ -28,7 +28,7 @@ version: "3"
 
 services:
   ovh-dynhost:
-    image: P4sca1/dynhost
+    image: p4sca1/dynhost
     restart: always
     environment:
       DYNHOST_DOMAIN_NAME: dynhost.example.com
