@@ -53,8 +53,8 @@ If your ip changed and you can't wait 15 minutes for the next update to happen, 
 The docker container will echo debug messages every 15 miuntes.
 You can access them via
 
-`docker container logs ovh-dynhost`
+`docker container exec ovh-dynhost cat /usr/src/app/dynhost.log`
 
 **Or when using docker-compose:**
 
-`docker-compose logs ovh-dynhost`
+`docker-compose  exec ovh-dynhost cat /usr/src/app/dynhost.log`
