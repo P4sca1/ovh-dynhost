@@ -7,6 +7,6 @@ WORKDIR /usr/src/app
 COPY dynhost.sh .
 RUN chmod +x ./dynhost.sh
 
-RUN ln -s /usr/src/app/dynhost.sh /etc/periodic/15min/dynhost
+RUN ln -sf /usr/src/app/dynhost.sh /etc/periodic/15min/dynhost
 
 CMD ["crond", "-f"]
