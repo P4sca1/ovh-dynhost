@@ -2,7 +2,7 @@
 
 echo "Checking IP" >> dynhost.log
 
-IP=$(dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com)
+IP=$(dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com | tr -d \")
 CURRENT_IP=$(dig +short $DYNHOST_DOMAIN_NAME)
 
 if [ "$IP" ]; then 
